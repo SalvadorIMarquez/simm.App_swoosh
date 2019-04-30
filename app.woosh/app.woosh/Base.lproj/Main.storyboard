@@ -95,10 +95,10 @@
             </objects>
             <point key="canvasLocation" x="-268" y="126"/>
         </scene>
-        <!--View Controller-->
+        <!--LeagueVC-->
         <scene sceneID="03k-Ex-hzK">
             <objects>
-                <viewController id="mB7-oI-Ffc" sceneMemberID="viewController">
+                <viewController id="mB7-oI-Ffc" customClass="LeagueVC" customModule="app_woosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3L9-w2-BkK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -133,6 +133,9 @@
                                 <state key="normal" title="NEXT">
                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onNextTapped:" destination="mB7-oI-Ffc" eventType="touchUpInside" id="sMb-0e-4cf"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="sdw-wG-g8x">
                                 <rect key="frame" x="20" y="152" width="280" height="153"/>
@@ -195,16 +198,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3BD-JW-7YU"/>
                     </view>
+                    <connections>
+                        <segue destination="EqL-uF-rlS" kind="show" identifier="skillCVSegue" id="WyB-N4-kI7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FZ3-HZ-M6X" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Wv3-qB-6W6" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="663.768115942029" y="125.54347826086958"/>
         </scene>
-        <!--View Controller-->
+        <!--SkillVC-->
         <scene sceneID="zQi-Nx-vlH">
             <objects>
-                <viewController id="EqL-uF-rlS" sceneMemberID="viewController">
+                <viewController id="EqL-uF-rlS" customClass="SkillVC" customModule="app_woosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="O6K-uw-CMw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
